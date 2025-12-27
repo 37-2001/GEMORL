@@ -3,8 +3,8 @@ import tensorflow.contrib.layers as tl
 from state_normalization import normalize_node_inputs, normalize_job_inputs
 from tf_op import *
 from msg_passing_path import *
-from gcn1 import GraphCNN
-from gsn1 import GraphSNN
+from gcn import GraphCNN
+from gsn import GraphSNN
 from agent import Agent
 from  sklearn.preprocessing import  StandardScaler
 
@@ -412,3 +412,4 @@ class ActorAgent1(Agent):
                gcn_mats, gcn_masks, summ_mats, \
                running_dags_mat, dag_summ_backward_map, \
                job_dags_changed
+
